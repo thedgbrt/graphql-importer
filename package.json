@@ -1,0 +1,24 @@
+{
+  "name": "graphql-importer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "import": "npm run transpile-import && node generated/importScriptEs5.js",
+    "transpile-import": "babel ./importScript.js -o generated/importScriptEs5.js"
+  },
+  "author": "Dagobert Renouf",
+  "license": "ISC",
+  "description": "Quickly import json data via a GraphQL endpoint.",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.16.1",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1",
+    "babel-cli": "^6.18.0",
+    "minimist": "^1.2.0"
+  }
+}
