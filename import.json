@@ -1,4 +1,3 @@
 [
-  { "name": "My first todo" },
-  { "name": "My Second todo" }
+  { "text": "Hello" }
 ]

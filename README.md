@@ -1,12 +1,18 @@
 # GraphQL Importer
-Quickly import / delete json data via a GraphQL endpoint. Useful when playing with queries.
+Import JSON data via a GraphQL endpoint.
 
-# Setup
-- Run `npm install`
-- Define your GraphQL mutations in importScript.js
-- Replace `YOUR-GRAPHQL-ENDPOINT` in importScript.js
+## Setup
+```
+$ git clone https://github.com/thedgbrt/graphql-importer.git
+$ cd graphql-importer
+$ npm install
+```
+
+## Usage
 - add desired data in import.json
+- define your GraphQL mutations in importScript.js
+- replace `<YOUR-GRAPHQL-ENDPOINT>` in importScript.js
+- run `npm run import`.
 
-Then run `npm run import`.
-
-To empty all imports (and all other entries matched by the mutation), run `npm run import -- --empty=true`.
+## Usage with Reindex
+Change mutations in importScriptReindex.js, run with `npm run import-reindex`. 
