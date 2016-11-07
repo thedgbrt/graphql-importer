@@ -1,5 +1,6 @@
 # GraphQL Importer
 Import JSON data via a GraphQL endpoint.
+[Read the tutorial](https://masterreactnative.com/importing-data-via-a-graphql-endpoint-6b9f2feccc2c).
 
 ## Setup
 ```
